@@ -57,9 +57,9 @@ vehicle-service-booking-system/
 
  <dt>frontend/</dt>
    <dd>src/</dd>
-      <dd><dd>pages/</dd>
-      <dd>components/</dd>
-      <dd>api/</dd></dd>
+      <dd>pages/<br/>
+      components/<br/>
+      api/</dd>
    <dd>App.jsx</dd>
 
  <dt>README.md</dt>
@@ -88,32 +88,32 @@ Booking Model:
 
 <h2>Installation & Setup</h2>
 <ol><li> Clone the Repository</li>
-git clone https://github.com/your-username/vehicle-service-booking-system.git
-cd vehicle-service-booking-system
+<ul><li>git clone https://github.com/your-username/vehicle-service-booking-system.git</li>
+<li>cd vehicle-service-booking-system</li></ul>
 
 <li> Backend Setup</li>
-cd backend
-npm install
+<ul><li>cd backend</li>
+<li>npm install</li></ul>
 
-Create a .env file inside the backend folder:<br/>
+<ul><li>Create a .env file inside the backend folder:</li></ul>
 
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key<br/>
+<ul><li>PORT=5000</li>
+<li>MONGO_URI=your_mongodb_connection_string</li>
+<li>JWT_SECRET=your_secret_key</li></ul>
 
 
-Start the backend server:<br/>
+<ul><li>Start the backend server:</li></ul>
 
-npm run dev<br/>
+<ul><li>npm run dev</li></ul>
 
 <li> Frontend Setup</li>
-cd frontend
-npm install
-npm start</ol>
+<ul><li>cd frontend</li>
+<li>npm install</li>
+<li><li>npm start</li></ul></ol>
 
 <h2>API Endpoints (Sample)</h2>
 <dl><dt>Auth Routes</dt>
-<dd>POST   /api/auth/register</dl>
+<dd>POST   /api/auth/register</dd>
 <dd>POST   /api/auth/login</dd>
 
 <dt>Booking Routes</dt>

@@ -35,7 +35,7 @@ Backend:
 Customer:
  <ul><li>Register & Login</li>
  <li>Book vehicle service</li>
- <li>View personal bookings</li>
+ <li>View personal bookings</li></ul>
 
 Admin:
 <ul><li>Secure login</li>

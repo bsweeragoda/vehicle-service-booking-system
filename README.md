@@ -36,7 +36,6 @@ Customer:
  <ul><li>Register & Login</li>
  <li>Book vehicle service</li>
  <li>View personal bookings</li>
- <li>Cancel bookings</li></ul>
 
 Admin:
 <ul><li>Secure login</li>
@@ -85,6 +84,11 @@ Booking Model:
  <li>serviceType</li>
  <li>bookingDate</li>
  <li>status (Pending / Approved / Completed)</li></ul>
+
+ Service Model:
+  <ul><li>name</li>
+  <li>price</li>
+  <li>descriprtion</li></ul>
 
 <h2>Installation & Setup</h2>
 <ol><li> Clone the Repository</li>

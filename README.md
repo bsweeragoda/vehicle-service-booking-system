@@ -109,7 +109,7 @@ Booking Model:
 <li> Frontend Setup</li>
 <ul><li>cd frontend</li>
 <li>npm install</li>
-<li><li>npm start</li></ul></ol>
+<li>npm start</li></ul></ol>
 
 <h2>API Endpoints (Sample)</h2>
 <dl><dt>Auth Routes</dt>

@@ -56,10 +56,10 @@ vehicle-service-booking-system/
    <dd>server.js</dd>
 
  <dt>frontend/</dt>
-   <dd><li>src/</li>
-      <li>pages/</li>
-      <li>components/</li>
-      <li>api/</li></dd>
+   <dd>src/</dd>
+      <dd><dd>pages/</dd>
+      <dd>components/</dd>
+      <dd>api/</dd></dd>
    <dd>App.jsx</dd>
 
  <dt>README.md</dt>
@@ -87,13 +87,13 @@ Booking Model:
  <li>status (Pending / Approved / Completed)</li></ul>
 
 <h2>Installation & Setup</h2>
-1️. Clone the Repository
+<ol><li> Clone the Repository</li>
 git clone https://github.com/your-username/vehicle-service-booking-system.git
-cd vehicle-service-booking-system<br/>
+cd vehicle-service-booking-system
 
-2️. Backend Setup
+<li> Backend Setup</li>
 cd backend
-npm install<br/>
+npm install
 
 Create a .env file inside the backend folder:<br/>
 
@@ -106,10 +106,10 @@ Start the backend server:<br/>
 
 npm run dev<br/>
 
-3️. Frontend Setup
+<li> Frontend Setup</li>
 cd frontend
 npm install
-npm start<br/>
+npm start</ol>
 
 <h2>API Endpoints (Sample)</h2>
 <dl><dt>Auth Routes</dt>

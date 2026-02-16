@@ -19,122 +19,126 @@ It provides:
 
 <h2>Tech Stack</h2>
 Frontend:
-<ol><li>React.js</li>
+<ul><li>React.js</li>
  <li>React Router</li>
  <li>Axios</li>
- <li>Tailwind</li></ol> 
+ <li>Tailwind</li></ul> 
 
 Backend:
- <ol><li>Node.js</li>
+ <ul><li>Node.js</li>
  <li>Express.js</li>
  <li>MongoDB (Mongoose ODM)</li>
  <li>JSON Web Token (JWT)</li>
- <li>bcrypt (Password Hashing)</li></ol>
+ <li>bcrypt (Password Hashing)</li></ul>
 
 <h2>User Roles</h2>
 Customer:
- <ol><li>Register & Login</li>
+ <ul><li>Register & Login</li>
  <li>Book vehicle service</li>
  <li>View personal bookings</li>
- <li>Cancel bookings</li></ol>
+ <li>Cancel bookings</li></ul>
 
 Admin:
-<ol><li>Secure login</li>
+<ul><li>Secure login</li>
 <li>View all service bookings</li>
 <li>Update booking status (Pending / Approved / Completed)</li>
-<li>Delete bookings if necessary</li></ol>
+<li>Delete bookings if necessary</li></ul>
 
 <h2>Project Structure</h2>
 vehicle-service-booking-system/
- <df><li>backend/</li>
-   <df><li>controllers/</li>
-   <li>models/</li>
-   <li>routes/</li>
-   <li>middleware/</li>
-   <li>config/</li>
-   <li>server.js</li></df>
+ <dl>
+  <dt>backend/</dt>
+   <dd>controllers/</dd>
+   <dd>models/</dd>
+   <dd>routes/</dd>
+   <dd>middleware/</dd>
+   <dd>config/</dd>
+   <dd>server.js</dd>
 
- <li>frontend/</li>li
-   <df><li>src/</li>
-    <df><li>pages/</li>
-       <li>components/</li>
-       <li>api/</li></df>
-    <li>App.jsx</li></df>
+ <dt>frontend/</dt>
+   <dd><li>src/</li>
+      <li>pages/</li>
+      <li>components/</li>
+      <li>api/</li></dd>
+   <dd>App.jsx</dd>
 
- <li>README.md</li></df>
+ <dt>README.md</dt>
+ </dl>
 
-Authentication Flow
- User registers as Customer
- Password is hashed using bcrypt
- JWT token is generated upon login
- Protected routes are accessed using JWT middleware
- Role-based authorization ensures Admin & Customer access control
+<h2>Authentication Flow</h2>
+ <ul><li>User registers as Customer</li>
+ <li>Password is hashed using bcrypt</li>
+ <li>JWT token is generated upon login</li>
+ <li>Protected routes are accessed using JWT middleware</li>
+ <li>Role-based authorization ensures Admin & Customer access control</li></ul>
 
-Database Schema (Example)
+<h2>Database Schema (Example)</h2>
 User Model:
- name
- email
- password
- role (admin / customer)
+ <ul><li>name</li>
+ <li>email</li>
+ <li>password</li>
+ <li>role (admin / customer)</li></ul>
  
 Booking Model:
- user (ObjectId)
- vehicleType
- serviceType
- bookingDate
- status (Pending / Approved / Completed)
+ <ul><li>user (ObjectId)</li>
+ <li>vehicleType</li>
+ <li>serviceType</li>
+ <li>bookingDate</li>
+ <li>status (Pending / Approved / Completed)</li></ul>
 
-Installation & Setup
+<h2>Installation & Setup</h2>
 1️. Clone the Repository
 git clone https://github.com/your-username/vehicle-service-booking-system.git
-cd vehicle-service-booking-system
+cd vehicle-service-booking-system<br/>
 
 2️. Backend Setup
 cd backend
-npm install
+npm install<br/>
 
-Create a .env file inside the backend folder:
+Create a .env file inside the backend folder:<br/>
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_secret_key<br/>
 
 
-Start the backend server:
+Start the backend server:<br/>
 
-npm run dev
+npm run dev<br/>
 
 3️. Frontend Setup
 cd frontend
 npm install
-npm start
+npm start<br/>
 
-API Endpoints (Sample)
-Auth Routes
-POST   /api/auth/register
-POST   /api/auth/login
+<h2>API Endpoints (Sample)</h2>
+<dl><dt>Auth Routes</dt>
+<dd>POST   /api/auth/register</dl>
+<dd>POST   /api/auth/login</dd>
 
-Booking Routes
-POST   /api/bookings
-GET    /api/bookings/my
-GET    /api/bookings      (Admin)
-PUT    /api/bookings/:id  (Admin)
-DELETE /api/bookings/:id  (Admin)
+<dt>Booking Routes</dt>
+<dd>POST   /api/bookings</dd>
+<dd>GET    /api/bookings/my</dd>
+<dd>GET    /api/bookings      (Admin)</dd>
+<dd>PUT    /api/bookings/:id  (Admin)</dd>
+<dd>DELETE /api/bookings/:id  (Admin)</dd></dl>
 
-Environment Variables
- Variable 	Description
- PORT     	Backend server port
- MONGO_URI	MongoDB connection string
- JWT_SECRET	Secret key for JWT
- 
-Learning Outcomes
+<h2>Environment Variables</h2>
+<table>
+ <tr><th>Variable</th> 	<th>Description</th></tr>
+ <tr><td>PORT</td>     	<td>Backend server port</td></tr>
+ <tr><td>MONGO_URI</td>	<td>MongoDB connection string</td></tr>
+ <tr><td>JWT_SECRET</td>	<td>Secret key for JWT</td></tr>
+</table>
+
+<h2>Learning Outcomes</h2>
 This project demonstrates:
- Full-stack MERN development
- RESTful API design
- JWT authentication
- Role-based authorization
- MongoDB data modeling
- Frontend–Backend integration
+ <ul><li>Full-stack MERN development</li>
+ <li>RESTful API design</li>
+ <li>JWT authentication</li>
+ <li>Role-based authorization</li>
+ <li>MongoDB data modeling</li>
+ <li>Frontend–Backend integration</li></ul>
 
-License
+<h2>License</h2>
 This project is licensed under the MIT License.

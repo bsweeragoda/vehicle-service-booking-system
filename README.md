@@ -1,68 +1,67 @@
-Vehicle Service Booking System
+<h1>Vehicle Service Booking System</h1>
 A full-stack Vehicle Service Booking System built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
 This system allows customers to book vehicle service appointments online and enables administrators to manage bookings efficiently.
 
-Project Overview
+<h2>Project Overview</h2>
 The Vehicle Service Booking System is a web-based application designed to streamline vehicle service management.
 
 It provides:
 
- Customer registration & login
+ Customer registration & login<br/>
 
- Service booking management
+ Service booking management<br/>
 
- Appointment scheduling
+ Appointment scheduling<br/>
 
- Admin dashboard for managing bookings
+ Admin dashboard for managing bookings<br/>
 
- JWT-based authentication & role-based access control
+ JWT-based authentication & role-based access control<br/>
 
-Tech Stack
-
+<h2>Tech Stack</h2>
 Frontend:
- React.js
- React Router
- Axios
- Tailwind 
+<ol><li>React.js</li>
+ <li>React Router</li>
+ <li>Axios</li>
+ <li>Tailwind</li></ol> 
 
-Backend
- Node.js
- Express.js
- MongoDB (Mongoose ODM)
- JSON Web Token (JWT)
- bcrypt (Password Hashing)
+Backend:
+ <ol><li>Node.js</li>
+ <li>Express.js</li>
+ <li>MongoDB (Mongoose ODM)</li>
+ <li>JSON Web Token (JWT)</li>
+ <li>bcrypt (Password Hashing)</li></ol>
 
-User Roles
+<h2>User Roles</h2>
 Customer:
- Register & Login
- Book vehicle service
- View personal bookings
- Cancel bookings
+ <ol><li>Register & Login</li>
+ <li>Book vehicle service</li>
+ <li>View personal bookings</li>
+ <li>Cancel bookings</li></ol>
 
-Admin
-Secure login
-View all service bookings
-Update booking status (Pending / Approved / Completed)
-Delete bookings if necessary
+Admin:
+<ol><li>Secure login</li>
+<li>View all service bookings</li>
+<li>Update booking status (Pending / Approved / Completed)</li>
+<li>Delete bookings if necessary</li></ol>
 
-Project Structure
+<h2>Project Structure</h2>
 vehicle-service-booking-system/
- backend/
-   controllers/
-   models/
-   routes/
-   middleware/
-   config/
-   server.js
+ <df><li>backend/</li>
+   <df><li>controllers/</li>
+   <li>models/</li>
+   <li>routes/</li>
+   <li>middleware/</li>
+   <li>config/</li>
+   <li>server.js</li></df>
 
- frontend/
-   src/
-    pages/
-    components/
-    api/
-    App.jsx
+ <li>frontend/</li>li
+   <df><li>src/</li>
+    <df><li>pages/</li>
+       <li>components/</li>
+       <li>api/</li></df>
+    <li>App.jsx</li></df>
 
- README.md
+ <li>README.md</li></df>
 
 Authentication Flow
  User registers as Customer
